@@ -1,0 +1,111 @@
+@use '../../../styles/base';
+
+.add-phone_modal{
+    position: relative;
+    height: 500px;
+    overflow: auto;
+
+    h2{
+        margin: 0 1rem;
+        color:rgba(0, 0, 0, 0.8);
+    }
+
+    h4{
+        margin: 1rem 1rem;
+        color: rgba(0, 0, 0, 0.3);
+        font-weight: 400;
+    }
+
+    .add_number{
+        color: base.$main_orange;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    form{
+        margin: auto;
+        text-align: center;
+    }
+
+    .number{
+        display: flex;
+        width: 100%;
+        gap:1rem;
+        align-items: center;
+
+        .radio-button{
+            height: 20px;
+            width: 22px;
+            background-color: white;
+            border: 3px solid white;
+            outline: 1px solid black;
+            border-radius: 50%;             
+        }
+
+        label{
+            width: 100%;
+        }
+
+        .remove{ 
+            padding: 0;
+            padding-bottom: 0.25rem;
+            height: 9px;
+            width: 12px;
+            border:none;
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+       
+        
+    }
+    .selected{
+            color: base.$main_orange;
+            background-color: rgba(base.$main_orange, 20%);
+
+            .radio-button{
+                outline-color: base.$main_orange;
+                background-color: base.$main_orange;
+            }
+
+            .remove{
+                display: none;
+            }
+
+            &:hover{
+                color: base.$main_orange !important;
+                background-color: rgba(base.$main_orange, 20%);
+            }
+    }
+    
+    .input{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .line{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        padding: 1rem ;
+    }
+
+    .submit{
+        font-weight: bold;
+        margin: 1rem;
+        padding: 1rem ;
+        width: 90%;
+        border-radius: 2px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .select{
+        color:white;
+        background-color: base.$main_orange;
+    }
+
+}

@@ -1,0 +1,29 @@
+@use '../../../styles/base';
+
+.all_categories{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0; 
+    flex-wrap: wrap;
+
+    .category{
+        padding: 0.7rem 1.5rem;
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        margin-top: 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+
+        &:hover{
+             box-shadow: 0 0 3px 1px base.$main_orange;;  
+              color: base.$main_orange;;
+        }
+
+        .svg-icon{
+            height: 104px;
+            width: 104px;
+        }
+
+    }
+}

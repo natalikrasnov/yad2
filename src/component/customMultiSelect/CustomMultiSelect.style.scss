@@ -1,0 +1,33 @@
+@use '../../styles/base';
+
+.multi-select {
+    margin: 2rem 0;
+    width: 90%;
+    
+    .title{
+            font-size: 1.1rem;
+            font-weight: bold;
+    }
+    
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+        
+        
+
+        .multi-select_item {
+            width: 115px;
+            padding: 0.3rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+
+            &:hover{
+                color: base.$main_orange;
+            }
+        }
+    }
+}

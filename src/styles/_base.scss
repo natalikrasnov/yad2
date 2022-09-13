@@ -1,0 +1,24 @@
+$main_orange: #fb7a11;
+
+*{
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.13);
+        
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(142, 142, 142);
+      //  border-radius: 8px;
+    }
+}
+
+@mixin mobile {
+    @media (min-width:600px) {
+        @content()
+    }
+}

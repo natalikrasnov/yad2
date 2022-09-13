@@ -1,0 +1,44 @@
+@use '../../../styles/base';
+
+.header{
+    width: 100%;
+   // position: fixed;
+    height: 55px;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 ;
+
+
+    .white-space{
+        width: 30%;
+    }
+
+    .title{
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.523);
+    }
+
+    .user-name{
+        color: base.$main_orange;
+        display: flex;
+        align-items: center;
+        margin: 0.3rem;
+
+        svg{
+            margin: 0  0.5rem;
+        }
+
+    }
+
+    .close-form{
+        border-radius: 30px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.215);
+        padding: 0.4rem 1rem;
+    }
+}

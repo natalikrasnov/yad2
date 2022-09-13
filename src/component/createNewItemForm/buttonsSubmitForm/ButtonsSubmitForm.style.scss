@@ -1,0 +1,26 @@
+@use '../../../styles/base';
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+
+    &>button {
+        background: white;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.149);
+        
+        &:hover{
+            border: none;
+            background: base.$main_orange;
+            color: white;
+        }
+    }
+
+    .continue {
+        color: base.$main_orange;
+        border: 1px solid base.$main_orange;
+        font-weight: bold;
+    }
+}

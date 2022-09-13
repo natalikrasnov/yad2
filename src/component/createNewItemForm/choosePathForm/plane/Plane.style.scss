@@ -1,0 +1,125 @@
+.plane{
+    width: 30% !important;
+    overflow: hidden;
+    height: 450px;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .header{
+        height: 40%;
+        width: 100%;
+        padding-top: 2rem;
+       margin-bottom: 1.5rem;
+
+        label{
+            position: absolute;
+            top: 25px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        img{
+            height: 100px;
+        }
+
+        .recommended_label{
+            position: absolute;
+            width: 100%;
+            left: -95px;
+            box-shadow:0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;
+            top: 15px;
+            background-color: white;
+            font-size: 0.8rem;
+            text-align: center;
+            rotate: 310deg;
+            color: rgb(193, 162, 8);
+        }
+        
+    }
+
+    .price{
+        font-size: 1.7rem;
+    }
+
+    button{
+        border-radius: 30px;
+        margin: 1.5rem 0;
+        border:none;
+
+    }
+
+    .cons-pros{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+
+        .pro::before{
+            content: " \2714 ";
+            margin-left: 0.2rem;
+        }
+
+        .cons{
+            opacity: 0.5;
+
+            &::before {
+                content: " X ";
+                margin-left: 0.2rem;
+            }
+        }
+    }
+
+
+    &:nth-child(1) {
+    
+            .header {
+                background-color: rgb(237, 237, 237, 0.4);
+            }
+    
+            button {
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                background-color: rgb(237, 237, 237,0.4);
+                color: black;
+            }
+        
+    }
+
+    &:nth-child(2) {
+        height: 500px;
+
+        .header{
+            background-color: rgba(255, 183, 0, 0.073);
+        }
+    
+        button {
+            background-color: rgb(11, 230, 3);
+            color: white;
+        }
+        .pro::before {
+            color: rgb(193, 162, 8);
+        }
+    }
+
+    &:nth-child(3) {    
+            .header {
+                background-color: rgba(255, 0, 0, 0.05);
+            }
+    
+            button {
+                background-color: white;
+                color: rgba(red, 60%);
+                border: 1px solid rgba(red, 60%);
+            }
+            .pro::before {
+                color: rgb(234, 128, 128);
+            }
+        }
+
+}

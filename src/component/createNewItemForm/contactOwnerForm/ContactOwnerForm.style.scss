@@ -1,0 +1,53 @@
+@use '../../../styles/base';
+
+.contact-owner_form{
+ 
+    .info_title{
+        margin: 1.5rem 0.5rem;
+    }
+    .content{
+       
+        margin: 0.5rem 0.5rem 3rem 0.5rem ;
+        
+
+        .add-more-contact{
+             
+            .add_contact{
+                color: base.$main_orange;
+                cursor: pointer;
+                
+                label{
+                    border: 1px solid base.$main_orange;
+                    border-radius: 50%;
+                    margin-left: 0.2rem;
+                    padding: 0 0.2rem;
+                }
+            }
+
+            .remove_contact{
+                opacity: 0.8;
+                font-size: 0.9rem;
+                cursor: pointer;
+
+                &:hover{
+                    color: base.$main_orange;
+                }
+            }
+        }
+        
+        .buttons{
+            justify-content: end;
+        }
+
+        .row{
+            width: 100%;
+        }
+    }
+
+}
+
+.line{
+    width: 33%;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 2rem 0 1rem  0; 
+}

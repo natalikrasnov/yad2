@@ -1,0 +1,40 @@
+.title-sub_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .index{
+        height: 27px;
+        width: 29px;
+        border-radius: 50%;
+        color: rgb(3, 194, 111);
+        border: 2px solid rgb(3, 194, 111);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        width: 100%;
+        text-align: right;        
+        cursor: pointer;
+
+    }
+
+    .edit{
+        rotate: 120deg;
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+}
+
+.completed_index{
+        opacity: 1 !important;
+        background-color: rgba(11, 175, 22, 0.252);
+        color: rgb(0, 172, 37) !important;
+        border: none !important;
+}

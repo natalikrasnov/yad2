@@ -1,0 +1,40 @@
+.inner_content{
+  
+
+    form{
+        padding-top: 1rem;
+
+        .not-found-address{
+            font-size: 0.75rem;
+            opacity: 0.4;
+        }
+
+
+        .disabled{
+            border: none;
+            padding: 0 !important;
+        }
+
+    }
+
+}
+
+    .row{
+            display: flex;
+            width: 80%;
+            justify-content: right;
+            align-items: end;
+            gap: 0.5rem;
+
+            &>div{
+                width: 27%;
+
+                &>label{
+                    width: 100%;
+                } 
+               
+            }
+            .checkbox{
+                    margin-bottom: 1rem;
+                }
+        }
